@@ -1,0 +1,472 @@
+/* =========================================
+   CREATE PAGE
+========================================= */
+
+.createPage {
+  min-height: 100vh;
+
+  padding: 35px 25px 60px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(37, 99, 235, 0.07),
+      transparent 25%
+    ),
+    #f6f8fc;
+
+  color: #101d38;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.createHeader {
+  position: relative;
+
+  max-width: 1100px;
+  min-height: 155px;
+
+  margin: 0 auto 25px;
+  padding: 30px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      110deg,
+      #0d1932,
+      #183776 55%,
+      #285abe
+    );
+
+  color: #fff;
+
+  box-shadow:
+    0 18px 40px rgba(15, 27, 54, 0.18);
+}
+
+.createHeader::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  right: -100px;
+  top: -160px;
+
+  border-radius: 50%;
+
+  background: rgba(96, 165, 250, 0.15);
+}
+
+.createBadge {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 8px;
+
+  color: #93c5fd;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+.createBadge span {
+  color: #60a5fa;
+}
+
+.createHeader h1 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  letter-spacing: -0.8px;
+}
+
+.createHeader p {
+  margin: 7px 0 0;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 14px;
+}
+
+.createHeaderIcon {
+  position: relative;
+  z-index: 2;
+
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #fff;
+
+  font-size: 34px;
+  font-weight: 300;
+
+  backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.createCard {
+  max-width: 1100px;
+
+  margin: auto;
+  padding: 35px 40px;
+
+  border: 1px solid #e3e8f1;
+  border-radius: 20px;
+
+  background: #fff;
+
+  box-shadow:
+    0 12px 35px rgba(15, 27, 54, 0.08);
+}
+
+
+/* =========================================
+   FORM HEADER
+========================================= */
+
+.createFormHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+  margin-bottom: 28px;
+
+  border-bottom: 1px solid #edf1f6;
+}
+
+.createFormTitle {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.createTitleIcon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  background: #eff6ff;
+
+  font-size: 21px;
+}
+
+.createFormTitle h2 {
+  margin: 0;
+
+  color: #111d38;
+
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.createFormTitle p {
+  margin: 4px 0 0;
+
+  color: #8995a8;
+
+  font-size: 13px;
+}
+
+.requiredBadge {
+  padding: 8px 13px;
+
+  border: 1px solid #e3e8f1;
+  border-radius: 20px;
+
+  background: #f8fafc;
+
+  color: #7a879a;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.createSectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 20px;
+
+  color: #162442;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.createSectionTitle span {
+  width: 29px;
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   FORM CONTROLS
+========================================= */
+
+.createCard .form-label {
+  margin-bottom: 8px;
+
+  color: #34425b;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.createCard .form-control,
+.createCard .form-select {
+  min-height: 48px;
+
+  padding: 10px 14px;
+
+  border: 1px solid #dfe5ee;
+  border-radius: 10px;
+
+  background: #fbfcfe;
+
+  color: #18253f;
+
+  font-size: 14px;
+
+  box-shadow: none;
+
+  transition: all 0.2s ease;
+}
+
+.createCard .form-control::placeholder {
+  color: #a4afbf;
+}
+
+.createCard .form-control:hover,
+.createCard .form-select:hover {
+  border-color: #cbd5e1;
+}
+
+.createCard .form-control:focus,
+.createCard .form-select:focus {
+  border-color: #3b82f6;
+
+  background: #fff;
+
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.createCard textarea.form-control {
+  min-height: 105px;
+
+  resize: vertical;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.createFormActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 35px;
+  padding-top: 25px;
+
+  border-top: 1px solid #edf1f6;
+}
+
+.createFormActions button {
+  min-height: 46px;
+
+  padding: 0 22px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+
+/* BACK BUTTON */
+
+.cancelCreateBtn {
+  border: 1px solid #dce3ed !important;
+
+  background: #fff !important;
+
+  color: #46546b !important;
+}
+
+.cancelCreateBtn:hover {
+  border-color: #c4cfdd !important;
+
+  background: #f7f9fc !important;
+
+  color: #1e293b !important;
+
+  transform: translateY(-1px);
+}
+
+
+/* CREATE BUTTON */
+
+.submitCreateBtn {
+  border: none !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #3b82f6,
+      #2454b8
+    ) !important;
+
+  color: #fff !important;
+
+  box-shadow:
+    0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.submitCreateBtn:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1d4ed8
+    ) !important;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 24px rgba(37, 99, 235, 0.32);
+}
+
+.submitCreateBtn:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .createPage {
+    padding: 20px 14px 40px;
+  }
+
+  .createHeader {
+    min-height: 135px;
+
+    padding: 25px;
+
+    border-radius: 17px;
+  }
+
+  .createHeader h1 {
+    font-size: 28px;
+  }
+
+  .createHeaderIcon {
+    width: 55px;
+    height: 55px;
+
+    font-size: 27px;
+  }
+
+  .createCard {
+    padding: 25px 20px;
+
+    border-radius: 16px;
+  }
+
+  .createFormHeader {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .createFormActions {
+    flex-direction: column-reverse;
+  }
+
+  .createFormActions button {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .createHeaderIcon {
+    display: none;
+  }
+
+  .createHeader p {
+    font-size: 12px;
+  }
+
+  .createFormHeader {
+    flex-direction: column;
+  }
+
+  .requiredBadge {
+    align-self: flex-start;
+  }
+}
