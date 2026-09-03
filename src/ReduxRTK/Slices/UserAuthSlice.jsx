@@ -1,10 +1,11 @@
+
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // API Read Data
 export const loginUser = createAsyncThunk('api/loginUser', async (userData, thunkAPI) => {
 
     try {
-        let response = await fetch('http://localhost:3000/users');
+        let response = await fetch('https://cruddata-anea.onrender.com/users');
 
         if (!response.ok) {
             throw new Error("Something went wrong");
@@ -72,5 +73,6 @@ export const AuthSlice = createSlice({
 export default AuthSlice.reducer;
 
 export const { userLogout } = AuthSlice.actions;
+
 
 

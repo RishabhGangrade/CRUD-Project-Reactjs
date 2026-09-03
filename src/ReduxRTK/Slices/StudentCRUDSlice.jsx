@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // API Read Data
 export const readData = createAsyncThunk('api/read', async () => {
-    let response = await fetch('http://localhost:3000/users');
+    let response = await fetch('https://cruddata-anea.onrender.com/users');
 
     try {
         let data = await response.json();
@@ -16,7 +16,7 @@ export const readData = createAsyncThunk('api/read', async () => {
 
 // API Insert Data
 export const insertData = createAsyncThunk('api/insert', async (formData) => {
-    let response = await fetch('http://localhost:3000/users', {
+    let response = await fetch('https://cruddata-anea.onrender.com/users', {
         method: "POST",
         headers: {
             "content-type": "application/json"
@@ -38,7 +38,7 @@ export const insertData = createAsyncThunk('api/insert', async (formData) => {
 export const updateData = createAsyncThunk('api/update', async (formData) => {
     console.log(formData);
 
-    let response = await fetch(`http://localhost:3000/users/${formData.id}`, {
+    let response = await fetch('https://cruddata-anea.onrender.com/users/${formData.id}', {
         method: "PUT",
         headers: {
             "content-type": "application/json"
@@ -59,7 +59,7 @@ export const updateData = createAsyncThunk('api/update', async (formData) => {
 
 // API Delete Data
 export const deleteData = createAsyncThunk('api/delete', async (id) => {
-    let response = await fetch(`http://localhost:3000/users/${id}`, {
+    let response = await fetch('https://cruddata-anea.onrender.com/users/${id}', {
         method: "DELETE"
     });
     console.log(response);
