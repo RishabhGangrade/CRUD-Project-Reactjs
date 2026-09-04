@@ -81,7 +81,7 @@ const CreatePage = () => {
           <div className="createFormTitle">
 
             <div className="createTitleIcon">
-              👤
+              🎓
             </div>
 
             <div>
