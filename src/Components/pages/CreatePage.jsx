@@ -66,7 +66,7 @@ const CreatePage = () => {
         </div>
 
         <div className="createHeaderIcon">
-          +
+          📋
         </div>
 
       </div>
@@ -262,6 +262,7 @@ const CreatePage = () => {
                   </option>
 
                   <option value="Indore">Indore</option>
+                  <option value="Khandwa">Khandwa</option>
                   <option value="Jabalpur">Jabalpur</option>
                   <option value="Katni">Katni</option>
                   <option value="Mandla">Mandla</option>
@@ -377,17 +378,57 @@ const CreatePage = () => {
                     Select Language
                   </option>
 
+                  <option value="Front-End Development">
+                    Front-End Development
+                  </option>
+
+                  <option value="Back-End Development">
+                    Back-End Development
+                  </option>
+
+            
+
+                  <option value="C">
+                    C
+                  </option>
+
+                  <option value="C++">
+                    C++
+                  </option>
+
+                  <option value="C#">
+                    C#
+                  </option>
+
                   <option value="Java">
                     Java
+                  </option>
+
+                  <option value="Python">
+                    Python
+                  </option>
+
+                  <option value="React">
+                    React
                   </option>
 
                   <option value="Node">
                     Node
                   </option>
 
-                  <option value="React">
-                    React
+                  <option value="Express">
+                    Express
                   </option>
+
+                  <option value="SQL">
+                    SQL
+                  </option>
+
+                  <option value="MongoDB">
+                    MongoDB
+                  </option>
+
+                  
 
                 </Form.Select>
 
@@ -436,6 +477,10 @@ const CreatePage = () => {
 
                   <option value="Student">
                     Student
+                  </option>
+
+                  <option value="No Role">
+                    No Role
                   </option>
 
                 </Form.Select>
