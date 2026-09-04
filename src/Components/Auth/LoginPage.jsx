@@ -88,7 +88,7 @@ const LoginPage = () => {
 
         <div className={styles.signup}>
           Don't have an account? &nbsp;
-          <Link to='/register'>Register</Link>
+          <Link to='/create'>Register</Link>
         </div>
 
       </div>
