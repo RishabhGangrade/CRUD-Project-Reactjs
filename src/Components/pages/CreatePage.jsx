@@ -58,7 +58,7 @@ const CreatePage = () => {
             <span>✦</span> STUDENT MANAGEMENT
           </div>
 
-          <h1>Student Registration</h1>
+          <h1 style={{ color: "white" }}>Student Registration</h1>
 
           <p>
             Create a new student profile by entering the details below.
